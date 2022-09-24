@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+
+:root {
+    /* FONTES */
+    --lato: 'Lato', sans-serif;
+    --merri: 'Merriweather', serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--merri);
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.area--img {
+    display: none;
+}
+
+.area--login {
+    width: 100%;
+    height: 100%;
+    padding: 70px 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+input[type=email],
+input[type=password] {
+    display: block;
+    padding: 15px 15px;
+    width: 100%;
+    border: 1px solid #999;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.area--content h2 {
+    font-size: 2.4rem;
+    font-weight: normal;
+    font-family: var(--merri);
+
+    margin-bottom: 8px;
+}
+
+.area--content h1 {
+    font-size: 3.2rem;
+    margin-bottom: 40px;
+}
+
+.area--content label {
+    font-size: 1.8rem;
+    font-family: var(--lato);
+
+}
+
+.checked {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 24px 0;
+    position: relative;
+}
+
+.checked label {
+    font-size: 1.6rem;
+}
+
+.checked a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #2B6CB0;
+}
+
+.checked a:hover {
+    text-decoration: underline;
+}
+
+.entrar {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 16px;
+
+    background-color: #04C45C;
+    color: #fff;
+    font-size: 1.6rem;
+
+    cursor: pointer;
+}
+
+.entrar:hover {
+    background-color: #04c45eb6;
+}
+
+.login--google {
+    display: block;
+    background-color: #1A202C;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4rem;
+    text-align: center;
+
+    padding: 15px;
+    width: 100%;
+}
+
+.login--google:hover {
+    background-color: #1a202cde;
+}
+
+.login--google i {
+    color: red;
+    margin-right: 10px;
+}
+
+.area--login p {
+    margin-top: 24px;
+    font-size: 1.4rem;
+}
+
+.area--login p a {
+    text-decoration: none;
+    color: #2B6CB0;
+}
+
+.area--login p a:hover {
+    text-decoration: underline;
+}
+
+
+@media (min-width: 1024px) {
+
+    main {
+        width: 100vw;
+        height: 100vh;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100%;
+    }
+    
+    
+    .area--img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: #F7FAFC;
+        
+    }
+
+}
+
